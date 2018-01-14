@@ -443,6 +443,7 @@ ul.calendar {
 
 .spotify-container {
     margin: auto;
+    padding: 6px 0;
     -webkit-filter: grayscale(70%);
     filter: grayscale(70%);
     font-family: bold;
@@ -470,6 +471,7 @@ ul.calendar {
 }
 
 .spotify-track, .spotify-artist, .spotify-device {
+    font-weight: 400;
     margin: auto;
 }
 
