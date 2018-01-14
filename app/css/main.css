@@ -83,11 +83,9 @@ dt {
 }
 
 .not-listening:after {
-/*
     content: '';
-    font-size: 18px;
-    color: red;
-*/
+/*    font-size: 18px;*/
+/*    color: red;*/
 }
 
 .partial-result {
