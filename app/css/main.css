@@ -71,21 +71,15 @@ dt {
 .listening {
 /*    box-shadow: inset 0px -40px 40px -40px #fff*/
 }
-
-.listening:after {
-    content: '...';
-    margin-top: -36px;
-    font-size: 36px;
-}
-
 .not-listening {
 /*    box-shadow: inset 0px 0px 0px 0px #fff*/
 }
 
-.not-listening:after {
-    content: '';
-/*    font-size: 18px;*/
-/*    color: red;*/
+.listening-marker{
+    position: fixed;
+    width: auto;
+    height: auto;
+    text-align: center;
 }
 
 .partial-result {
