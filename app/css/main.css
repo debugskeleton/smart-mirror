@@ -80,7 +80,8 @@ dt {
     width: auto;
     height: auto;
     text-align: center;
-    margin-top: -250px;
+    margin-left: -100px;
+    margin-top: -200px;
 }
 
 .partial-result {
