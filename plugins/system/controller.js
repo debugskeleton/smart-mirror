@@ -1,6 +1,6 @@
 function SystemInfo($scope, $http, SystemInfoService, SpeechService, Focus, $interval) {
     
-	SystemService.init(function () {
+	SystemInfoService.init(function () {
 //        refreshAuth();
 //        addVoiceControl();
 //        currentStateInfo();
