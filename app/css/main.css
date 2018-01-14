@@ -76,10 +76,11 @@ dt {
 }
 
 .listening-marker{
-    position: fixed;
+    position: absolute;
     width: auto;
     height: auto;
     text-align: center;
+    margin-top: -250px;
 }
 
 .partial-result {
