@@ -4,7 +4,9 @@
 	function SystemService() {
 		var service = {};
         const si = require('systeminformation');
+    }
 
+    service.init = function (cb) {
         // callback style
         si.cpu(function(data) {
             console.log('CPU-Information:');
@@ -25,12 +27,6 @@
             console.log(e)
           }
         }
-    }
-
-    service.init = function (cb) {
-
-
-
     }
 
     return service;

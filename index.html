@@ -39,6 +39,7 @@
     </div>
     <div class="top-right">
       <div ng-include="'plugins/spotify/index.html'" ng-if="config.spotify.position === 'top'"></div>
+      <div ng-include="'plugins/system/index.html'"></div>
       <div ng-include="'plugins/weather/index.html'"></div>
       <div ng-include="'plugins/traffic/index.html'"></div>
       <div ng-include="'plugins/stock/index.html'"></div>
@@ -123,6 +124,7 @@
   <script src="app/js/controller.js"></script>
   <script src="plugins/soundcloud/controller.js"></script>
   <script src="plugins/spotify/controller.js"></script>
+  <script src="plugins/system/controller.js"></script>
   <script src="plugins/search/controller.js"></script>
   <script src="plugins/xkcd/controller.js"></script>
   <script src="plugins/dilbert/controller.js"></script>
