@@ -47,7 +47,7 @@
     </div>
   </div>
   <div class="container" ng-class="(listening == true)?'listening':'not-listening'">
-    <div class="middle-center">
+    <div ng-hide="listening" class="middle-center">
       <h1 ng-controller="Greeting" ng-bind="greeting" ng-cloak></h1>
       <div ng-include="'plugins/remote/index.html'"></div>
       <div ng-include="'plugins/soundcloud/index.html'"></div>
@@ -61,6 +61,7 @@
       <div ng-include="'plugins/timer/index.html'"></div>
       <div ng-include="'plugins/todoist/index.html'"></div>
     </div>
+    <img ng-show="listening" class="listening-marker" src="https://vignette.wikia.nocookie.net/animal-jam-clans-1/images/a/ac/Pulsing_sound_waves.gif/revision/latest?cb=20171105152415"/>
     <div class="bottom-center">
       <!-- Command list -->
       <div ng-include="'plugins/commands/index.html'"></div>
@@ -78,7 +79,6 @@
       <!-- Someday something will live here -->
     </div>
     <div ng-controller="Maker"></div>
-    <img ng-show="listening" class="listening-marker" src="https://vignette.wikia.nocookie.net/animal-jam-clans-1/images/a/ac/Pulsing_sound_waves.gif/revision/latest?cb=20171105152415"/>
   </div>
   <!-- Sleep cover -->
   <div ng-controller="AutoSleep"></div>
