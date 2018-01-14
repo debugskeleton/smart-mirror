@@ -71,17 +71,11 @@
 		service.init = function (cb) {
 			var port = process.env.PORT || 4000;
 			console.debug('Express is listening on port: ' + port);
-//			app.listen(port);
-            
-            
-            
-            const server = require('http').createServer(app)
-            // Start the server
-            server.listen(port)
-            // Use the remote directory and initilize socket connection
-//            app.use(express.static(__dirname + '/remote'))
-            
-            
+			app.listen(port);
+                        
+//            // Alternate to allow off-device access, needs the ip address assigned to the API config instead of localhost:4000...
+//            const server = require('http').createServer(app)
+//            server.listen(port)
 
             // Read the persisted token, initially captured by a webapp.
             fs.stat(tokenFile, function (err) {

@@ -69,11 +69,13 @@ dt {
 }
 
 .listening {
-    box-shadow: inset 0px -40px 40px -40px #fff
+    background: red;
+/*    box-shadow: inset 0px -40px 40px -40px #fff*/
 }
 
 .not-listening {
-    box-shadow: inset 0px 0px 0px 0px #fff
+    background: red;
+/*    box-shadow: inset 0px 0px 0px 0px #fff*/
 }
 
 .partial-result {
