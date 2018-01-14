@@ -78,7 +78,7 @@
       "position": "top",
       "authorization_uri": {
         "response_type": "code",
-        "scope": "activity nutrition profile settings sleep social weight heartrate",
+        "scope": "user-read-private user-read-email",
         "state": "3(#0/!~"
         }
     }
