@@ -7,11 +7,7 @@
         const si = require('systeminformation');
 
         service.init = function (cb) {
-            // callback style
-            si.system(function (data) {
-                console.log('System-Information:', data.model);
-                console.log(data);
-            });
+            cb();
         }
         
         service.getLoadCPU = function (option='currentload') {
@@ -24,6 +20,13 @@
         service.getTempCPU = function (option='main') {
             si.cpuTemperature(function (data) {
                 console.log('CPU-Temperature:', data[option]);
+                console.log(data);
+            });
+        }
+        
+        service.getDevice = function (option='model') {
+            si.system(function (data) {
+                console.log('System-Information:', data[option]);
                 console.log(data);
             });
         }

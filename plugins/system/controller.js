@@ -1,9 +1,14 @@
 function SystemInfo($scope, $http, SystemInfoService, SpeechService, Focus, $interval) {
     
 	SystemInfoService.init(function () {
-        $interval(refreshAuth, 1000 * 1); // seconds
-        $interval(currentStateInfo, 1000 * 1); // seconds
+        infoDevice();
+        $interval(temperatureCPU, 1000 * 1); // seconds
+        $interval(loadCPU, 1000 * 1); // seconds
     });
+    
+    var infoDevice = function () {
+        SystemInfoService.getDevice();
+    }
     
     var temperatureCPU = function () {
         SystemInfoService.getTempCPU();
