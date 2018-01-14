@@ -1,12 +1,17 @@
 function SystemInfo($scope, $http, SystemInfoService, SpeechService, Focus, $interval) {
     
 	SystemInfoService.init(function () {
-//        refreshAuth();
-//        addVoiceControl();
-//        currentStateInfo();
-//        $interval(refreshAuth, 60000 * 30); // minutes
-//        $interval(currentStateInfo, 1000 * config.spotify.timeout); // seconds
+        $interval(refreshAuth, 1000 * 1); // seconds
+        $interval(currentStateInfo, 1000 * 1); // seconds
     });
+    
+    var temperatureCPU = function () {
+        SystemInfoService.getTempCPU();
+    }
+    
+    var loadCPU = function () {
+        SystemInfoService.getLoadCPU();
+    }
 }
 
 angular.module('SmartMirror')

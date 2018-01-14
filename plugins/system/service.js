@@ -1,31 +1,31 @@
 (function () {
 	'use strict';
 
+    // https://www.npmjs.com/package/systeminformation
 	function SystemInfoService() {
 		var service = {};
         const si = require('systeminformation');
 
         service.init = function (cb) {
             // callback style
-            si.cpu(function(data) {
-                console.log('CPU-Information:');
+            si.system(function (data) {
+                console.log('System-Information:', data.model);
                 console.log(data);
             });
-
-            // promises style - new in version 3
-            si.cpu()
-                .then(data => console.log(data))
-                .catch(error => console.error(error));
-
-            // full async / await example (node >= 7.6)
-            async function cpu() {
-              try {
-                const data = await si.cpu();
-                console.log(data)
-              } catch (e) {
-                console.log(e)
-              }
-            }
+        }
+        
+        service.getLoadCPU = function (option='currentload') {
+            si.cpuLoad(function (data) {
+                console.log('CPU-Load:', data[option]);
+                console.log(data);
+            });
+        }
+        
+        service.getTempCPU = function (option='main') {
+            si.cpuTemperature(function (data) {
+                console.log('CPU-Temperature:', data[option]);
+                console.log(data);
+            });
         }
 
         return service;
