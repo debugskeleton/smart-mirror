@@ -74,9 +74,8 @@ dt {
 
 .listening:after {
     content: '...';
-    font-size: 18px;
-    color: red;
-/*    box-shadow: inset 0px -40px 40px -40px #fff*/
+    margin-top: -36px;
+    font-size: 36px;
 }
 
 .not-listening {
@@ -84,9 +83,11 @@ dt {
 }
 
 .not-listening:after {
+/*
     content: '';
     font-size: 18px;
     color: red;
+*/
 }
 
 .partial-result {
