@@ -1,7 +1,7 @@
 (function () {
 	'use strict';
 
-	function SystemService() {
+	function SystemInfoService() {
 		var service = {};
         const si = require('systeminformation');
     }
@@ -32,6 +32,6 @@
     return service;
 
 	angular.module('SmartMirror')
-    .factory('SystemService', SystemService);
+    .factory('SystemInfoService', SystemInfoService);
 
 } ());

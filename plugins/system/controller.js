@@ -1,4 +1,4 @@
-function System($scope, $http, SystemService, SpeechService, Focus, $interval) {
+function SystemInfo($scope, $http, SystemInfoService, SpeechService, Focus, $interval) {
     
 	SystemService.init(function () {
 //        refreshAuth();
@@ -10,4 +10,4 @@ function System($scope, $http, SystemService, SpeechService, Focus, $interval) {
 }
 
 angular.module('SmartMirror')
-    .controller('System', System);
+    .controller('SystemInfo', SystemInfo);
