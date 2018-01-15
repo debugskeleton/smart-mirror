@@ -80,9 +80,9 @@ dt {
     width: auto;
     height: auto;
     text-align: center;
-    margin-left: -125px;
+    margin-left: -130px;
     margin-top: -175px;
-    clip: rect(2px, calc(100% - 4px), calc(100% - 4px), 2px);
+    clip: rect(2px, 196px, 121px, 2px);
 }
 
 .partial-result {
