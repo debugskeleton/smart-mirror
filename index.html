@@ -64,7 +64,7 @@
     <div class="bottom-center">
       <!-- Command list -->
       <div ng-include="'plugins/commands/index.html'"></div>
-      <div ng-show="listening" ng-include="'plugins/rss/index.html'"></div>
+      <div ng-hide="listening" ng-include="'plugins/rss/index.html'"></div>
 
       <div class="error" ng-bind="speechError" ng-show="speechError"></div>
       <div class="partial-result" ng-bind="partialResult" ng-hide="speechError"></div>
